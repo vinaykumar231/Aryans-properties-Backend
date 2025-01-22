@@ -28,5 +28,5 @@ Ensure the following are installed on your system:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/aryans-properties-backend.git
+git clone https://github.com/vinaykumar231/Aryans-properties-Backend.git
 cd aryans-properties-backend
