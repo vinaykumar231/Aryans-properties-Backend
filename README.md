@@ -1,108 +1,138 @@
 # Aryans Properties
 
 ## Overview
-Aryans Properties is a comprehensive real estate platform backend built using **FastAPI** for the backend and **MySQL** as the database. The platform allows users to manage property listings, user accounts, and transactions efficiently. It supports three types of users: **Buyers**, **Sellers**, and **Admins**, each with their own dedicated features.
 
----
+Aryans Properties is a comprehensive real estate platform backend developed using **FastAPI** and **MySQL**. The platform provides a robust solution for managing property listings, user accounts, and transactions with dedicated portals for Buyers, Sellers, and Admins.
 
 ## Features
 
-### **Buyer Portal**
-- **Profile**: View and manage buyer details.
-- **Property Search**:
-  - Search for properties using filters (location, price, size, amenities).
-  - View detailed property listings.
-- **Transaction Management**: Initiate and track property transactions.
-- **Notifications**: Receive updates on transactions via email and SMS.
+### Buyer Portal
+- **Profile Management**: View and update buyer details
+- **Property Search**: 
+  - Advanced filtering (location, price, size, amenities)
+  - Detailed property listing views
+- **Transaction Tracking**: Initiate and monitor property transactions
+- **Notifications**: Email and SMS updates on transaction status
 
----
+### Seller Portal
+- **Profile Management**: Update and maintain seller information
+- **Property Listing**:
+  - Add new properties for sale
+  - Edit or remove existing property listings
+- **Transaction Insights**: Comprehensive transaction history and status monitoring
 
-### **Seller Portal**
-- **Profile**: Manage seller details.
-- **Property Management**:
-  - List new properties for sale.
-  - Edit or delete existing property listings.
-- **Transaction Overview**: View transaction history and status.
-
----
-
-### **Admin Portal**
+### Admin Portal
 - **Dashboard**:
-  - View details of all users (buyers and sellers).
-  - Monitor property listings and transactions.
-- **User  Management**:
-  - Manage user accounts and permissions.
-- **Content Management**:
-  - Handle property details and announcements.
-- **Payment Management**:
-  - View and manage payment details for transactions.
-
----
+  - Comprehensive overview of users and properties
+  - Transaction and listing monitoring
+- **User Management**:
+  - Account creation and permission control
+- **Content Administration**:
+  - Property detail management
+  - Announcement handling
+- **Payment Oversight**:
+  - Full transaction payment tracking
 
 ## Technology Stack
-### **Backend**
-Ensure the following are installed on your system:
-- Python 3.12.2 
+
+### Backend
+- Python 3.12.2
 - FastAPI
-- Mysql (or other relational database)
-- git
+- MySQL
+- Git
 
----
+## Prerequisites
 
-## Installation Instructions
+- Python 3.12.2 installed
+- MySQL database
+- Git
 
-### **Backend**
+## Installation
+
+### Backend Setup
+
 1. Clone the repository:
    ```bash
-  git clone https://github.com/vinaykumar231/Aryans-properties-Backend.git
-  cd aryans-properties-backend
-
+   git clone https://github.com/vinaykumar231/Aryans-properties-Backend.git
+   cd aryans-properties-backend
    ```
+
 2. Install dependencies:
    ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    pip install -r requirements.txt
    ```
-3. Set up the database:
-   - Create a MySQL database.
-   - Update the database connection string in the `settings.py` or `.env` file.
+
+3. Database Configuration:
+   - Create a MySQL database
+   - Update connection details in `settings.py` or `.env`
+
 4. Run the application:
    ```bash
    uvicorn main:app --reload
    ```
-5. Access the API docs at `http://localhost:8000/docs`.
 
----
+5. Access API Documentation:
+   - Swagger UI: `http://localhost:8000/docs`
+   - ReDoc: `http://localhost:8000/redoc`
 
 ## Database Structure
-### **Tables**
-- **Users**: Stores details of buyers, sellers, and admins.
-- **Properties**: Stores property details.
-more tables.
+
+### Primary Tables
+- **Users**: Stores user (buyer, seller, admin) details
+- **Properties**: Comprehensive property information
+- **Transactions**: Transaction tracking and details
+- **Notifications**: User communication log
 
 ## API Endpoints
-### **Buyer APIs**
-- Get buyer profile
-- Search for properties
 
-### **Admin APIs**
-- Manage user accounts and Permission
-- Monitor property listings
+### Authentication
+- User registration
+- Login and logout
+- Password reset
 
----
+### Buyer Endpoints
+- Profile retrieval and update
+- Property search
+- Transaction initiation
 
-## Future Enhancements
-- Integration with third-party video conferencing tools.
-- Enhanced reporting and analytics.
-- Mobile app support.
+### Seller Endpoints
+- Property listing management
+- Transaction history
 
----
+### Admin Endpoints
+- User account management
+- Property and transaction oversight
+
+## Future Roadmap
+
+- Third-party video conferencing integration
+- Advanced reporting and analytics
+- Cross-platform mobile application support
+- Enhanced search and recommendation algorithms
+
+## Security Features
+
+- Role-based access control
+- Secure authentication
+- Data encryption
+- Regular security audits
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
-This project is licensed All these things are part of **Maitri AI**..
 
----
+Proprietary software. All rights reserved by Maitri AI.
 
-## Author
-- Vinay Kumar
-- vinaykumar.pydev@gmail.com
+## Contact
 
+**Vinay Kumar**
+- Email: vinaykumar.pydev@gmail.com
+- GitHub: [@vinaykumar231](https://github.com/vinaykumar231)
